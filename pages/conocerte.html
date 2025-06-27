@@ -16,7 +16,8 @@
     <h1>Skate Central: Queremos conocerte.</h1>
   </header>
 
-  <main>
+  <main id="conocerte" class="min-vh-100 d-flex justify-content-center align-items-center bg-transparent">
+  
     <form action="/enviar" method="POST">
       <label for="nombre">Nombre:</label><br>
       <input type="text" id="nombre" name="nombre" required><br><br>
@@ -28,7 +29,7 @@
       <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Contanos de vos..."
         required></textarea><br><br>
 
-      <button type="submit">Enviar</button>
+      <button class="btn-form" type="submit">Enviar</button>
     </form>
 
   </main>
@@ -39,7 +40,11 @@
       <ul>
         <li>
           <a href="./conocenos.html">Conocenos</a>
+        </li>
+        <li>
           <a href="./historias.html">Historias sobre ruedas</a>
+          </li>
+        <li>  
           <a href="../index.html">Home</a>
         </li>
       </ul>

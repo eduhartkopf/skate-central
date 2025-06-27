@@ -96,11 +96,22 @@ section article img {
   margin-right: 15px;
 }
 
-.logo-wsp {
-  width: 100px;
-  height: auto;
+.btn-wsp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 60px;
+  z-index: 1050;
   background-color: transparent;
+  cursor: pointer;
 }
+
+.btn-wsp img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 .s-tres {
   width: auto;
@@ -383,6 +394,16 @@ footer {
   .texto-ubicacion:hover {
     text-decoration: underline;
   }
+
+  @media (min-width: 768px) {
+  .btn-wsp {
+    width: 70px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+
 }
 
 /* desktop pantalla 1280px */
@@ -472,4 +493,11 @@ footer {
     width: 500px;
     height: 300px;
   }
+
+  .btn-wsp {
+    width: 80px;
+    bottom: 20px;
+    right: 20px;
+  }
 }
+

@@ -1,17 +1,24 @@
-nav ul, btn-custom, main {
+// Variables
+
+$colorFuente: #ffffff;
+$titulos:  #ffff00;
+
+// Extends: 
+
+%flexBasico {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-p, header .foto-portada {
+%flexCentrado {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.long-6, .long-5, .long-ola, .s-tres {
+%img-size{
   width: auto;
   height: 320px;
 }
@@ -31,6 +38,7 @@ body {
 main {
   margin: 0;
   padding: 0;
+  @extend %flexBasico;
   background-color: rgba(92, 90, 90, 0.8);
   max-width: 100vw;
 }
@@ -39,6 +47,7 @@ header .foto-portada {
   margin: 15px auto 0 auto;
   width: 100%;
   height: auto;
+  @extend %flexCentrado;
 }
 
 header .logo-skate {
@@ -51,7 +60,7 @@ header .logo-skate {
 }
 
 h1 {
-  color: #ffff00 !important;
+  color: $titulos !important;
   font-size: 30px;
   margin-top: 10px;
   padding-left: 15px;
@@ -63,7 +72,8 @@ h1 {
 p {
   background-color: rgba(92, 90, 90, 0.8);
   margin: 15px;
-  color: #ffffff;
+  color: $colorFuente;
+  @extend %flexCentrado;
   height: 100%;
   text-align: center;
 }
@@ -105,8 +115,24 @@ section article img {
   display: block;
 }
 
+.s-tres {
+  @extend %img-size;
+}
+
+.long-ola {
+ @extend %img-size;
+  }
+
+.long-5 {
+  @extend %img-size;
+  }
+
+.long-6 {
+ @extend %img-size;
+}
+
 h2 {
-  color: #ffffff;
+  color: $colorFuente;
   font-size: 14px;
   width: 80%;
   background-color: transparent;
@@ -114,12 +140,12 @@ h2 {
 }
 
 h4 {
-  color: #ffffff;
+  color: $colorFuente;
   font-size: 30px;
 }
 
 h5 {
-  color: #ffffff;
+  color: $colorFuente;
   font-size: 20px;
   font-weight: normal;
 }
@@ -138,6 +164,7 @@ btn-custom {
   color: #0a460a;
   border: solid #000000;
   cursor: pointer;
+  @extend %flexBasico;
 }
 
 button:hover {
@@ -164,26 +191,29 @@ div ol li {
 
 div ol li a {
   text-decoration: none;
-  color: #ffffff;
+  color: $colorFuente;
   font-size: 15px;
   margin: 10px 5px;
   padding-left: 0;
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: center;
 }
 
+
 nav ul {
+  
   list-style: none;
   padding: 0;
   margin: 0;
+  @extend %flexBasico;
   gap: 30px;
 }
 
 nav ul li a {
   font-size: 15px;
   text-decoration: none;
-  color: #ffffff;
+  color: $colorFuente;
   padding-left: 0;
 }
 
@@ -252,7 +282,6 @@ button {
   margin-left: 15px;
   margin-top: 3px;
 }
-
 footer {
   display: flex;
   justify-content: center;
@@ -276,9 +305,11 @@ footer {
 
 .nav-footer li a {
   text-decoration: none;
-  color: #ffffff;
+  color: $colorFuente;
   font-size: 15px;
 }
+
+
 
 /* iPad  pantalla en vertical 820px*/
 @media (min-width: 620px) and (max-width: 820px) {
@@ -334,15 +365,15 @@ footer {
     width: 100%;
     display: block;
   }
+
   .btn-wsp {
-    bottom: 80px;
-  }
+  bottom: 80px;}
+
   div ol {
     display: flex;
     justify-content: center;
     gap: 100px;
   }
 }
-
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+// Mixins
+
+@mixin flexCentrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexBasico {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin img-size {
+  width: auto;
+  height: 320px;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

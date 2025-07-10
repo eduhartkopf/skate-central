@@ -1,0 +1,138 @@
+@use "../sass/utilities/variables" as var;
+@use "../sass/utilities/mixins" as m;
+
+@use "../sass/layout/header";
+@use "../sass/layout/main";
+@use "../sass/layout/footer";
+
+@use "../sass/_mq/mqIpad";
+@use "./_mq/mqMac";
+
+
+
+
+@mixin flexBasico {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin img-size {
+  width: auto;
+  height: 320px;
+}
+
+
+@mixin flexCentrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Mobile First pantallas 320px */
+
+body {
+  background-color: rgba(92, 90, 90, 0.8);
+  font-family: "WDXL Lubrifont TC", sans-serif;
+  font-style: normal;
+  max-width: 100vw;
+}
+
+
+
+.btn-wsp {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  width: 60px;
+  z-index: 1050;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-wsp img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+.mapa {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(92, 90, 90, 0.8);
+}
+
+.mapa iframe {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+  display: block;
+}
+
+.ubicacion {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.texto-ubicacion {
+  font-size: 4rem;
+  color: #171717;
+  text-decoration: none;
+  background: none;
+  font-size: 24px;
+}
+
+#conocerte {
+  background-color: transparent;
+}
+
+.btn-form {
+  color: black;
+  background: transparent;
+  width: 80px;
+}
+
+label {
+  margin-left: 15px;
+  margin-bottom: 3px;
+  display: block;
+}
+
+input,
+textarea {
+  background-color: rgba(92, 90, 90, 0.8);
+  color: black;
+  margin-left: 15px;
+  margin-bottom: 3px;
+}
+
+textarea::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+button {
+  font-size: 18px;
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+
+
+
+
+/*# sourceMappingURL=style.css.map */

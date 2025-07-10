@@ -1,0 +1,41 @@
+// Header
+
+@use "../utilities/variables" as var;
+@use "../utilities/mixins" as m;
+
+
+
+header .foto-portada {
+  margin: 15px auto 0 auto;
+  width: 100%;
+  height: auto;
+  @include m.flexCentrado;
+}
+
+header .logo-skate {
+  width: 8%;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  z-index: 10;
+  border: none;
+}
+
+h1 {
+  color: var.$titulos !important;
+  font-size: 30px;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: rgba(92, 90, 90, 0.8);
+}
+
+p {
+  background-color: #5c5a5acc;
+  margin: 15px;
+  color: var.$colorFuente;
+  @include m.flexCentrado;
+  height: 100%;
+  text-align: center;
+}

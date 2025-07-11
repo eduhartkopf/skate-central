@@ -33,15 +33,7 @@
 
 /* Mobile First pantallas 320px */
 
-#carouselHeader {
 
-    img {
-      width: 100vh;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-  }
 
 body {
   background-color: #5c5a5acc;
@@ -102,7 +94,7 @@ body {
 }
 
 .btn-form {
-  color: black;
+  color: #000000;
   background: transparent;
   width: 80px;
 }

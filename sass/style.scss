@@ -33,8 +33,18 @@
 
 /* Mobile First pantallas 320px */
 
+#carouselHeader {
+
+    img {
+      width: 100vh;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
 body {
-  background-color: rgba(92, 90, 90, 0.8);
+  background-color: #5c5a5acc;
   font-family: "WDXL Lubrifont TC", sans-serif;
   font-style: normal;
   max-width: 100vw;

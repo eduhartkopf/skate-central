@@ -5,10 +5,17 @@
 
 
 #carouselHeader {
-  margin: 15px auto 0 auto;
-  width: 100%;
-  height: auto;
-  @include m.flexCentrado;
+
+  img {
+    width: 100vh;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto 0 auto;
+    width: 100vh;
+
+    @include m.flexCentrado;
+  }
 }
 
 header .logo-skate {

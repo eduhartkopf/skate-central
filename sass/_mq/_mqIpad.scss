@@ -4,8 +4,8 @@
 @use "../utilities/mixins" as m;
 
 
+  @media (min-width: 620px) {
 
-@media (min-width: 620px) {
   .card-custom {
     height: 550px;
     max-height: 550px;
@@ -22,6 +22,19 @@
   .row.text-center {
     margin-top: auto;
     margin-bottom: 10px;
+  }
+ 
+  .nav-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1.87rem;
+    justify-items: center;
+
+    li:nth-child(3) {
+      grid-column: auto;
+      justify-self: start;
+    }
   }
 
   span {

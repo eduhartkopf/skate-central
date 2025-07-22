@@ -11,13 +11,21 @@ footer {
 }
 
 .nav-footer {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 50% 50%;  /* dos columnas iguales */
+  grid-template-rows: auto auto;  /* dos filas */
+  gap: 1rem;
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 1.87rem;
+  justify-items: center;  /* centra horizontalmente los items */
 }
+
+.nav-footer li:nth-child(3) {
+  grid-column: 1 / 3;   /* ocupa las dos columnas (todo el ancho) */
+  justify-self: center; /* centra el contenido */
+}
+
 
 .nav-footer li a,
 nav ul li a {
@@ -25,6 +33,7 @@ nav ul li a {
   color: var.$colorFuente;
   font-size: 0.93rem;
   padding-left: 0;
+   white-space: nowrap;   
 }
 
 nav ul {
